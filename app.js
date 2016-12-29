@@ -19,7 +19,8 @@ var express         = require("express"),
     
 
 
-mongoose.connect("mongodb://localhost/yelp_camp_v120");
+mongoose.connect("peter:pan@ds145295.mlab.com:45295/yelpcamp");
+// mongodb://peter:pan@ds145295.mlab.com:45295/yelpcamp
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
