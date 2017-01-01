@@ -17,7 +17,9 @@ var express         = require("express"),
         campgroundRoutes = require("./routes/campgrounds"),
         indexRoutes      = require("./routes/index")
     
+//backup variable
 
+// var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12Deployed"
 
 mongoose.connect(process.env.DATABASEURL);
 
