@@ -19,9 +19,9 @@ var express         = require("express"),
     
 
 
-// console.log(process.env.DATABASEURL)
+mongoose.connect(process.env.DATABASEURL);
 
-mongoose.connect("mongodb://localhost/yelp_camp_v12Deployed");
+// mongoose.connect("mongodb://localhost/yelp_camp_v12Deployed");
 // mongoose.connect("peter:pan@ds145295.mlab.com:45295/yelpcamp");
 
 
