@@ -29,6 +29,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
     // res.send("YOU HIT THE POST ROUTE!")
     // get data from form and add to campgrounds array
     var name = req.body.name;
+    var price = req.body.price;
     var image = req.body.image;
     var desc = req.body.description;
     var author = {
@@ -36,7 +37,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
         username: req.user.username 
         
     }
-    var newCampground = {name: name, image: image, description: desc, author:author}
+    var newCampground = {name: name, price: price, image: image, description: desc, author:author}
     
     
     // Create new campground & save to db
